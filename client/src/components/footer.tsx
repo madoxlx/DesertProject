@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center mb-4">
-              <img src={logoImage} alt="TravelEast Logo" className="h-10 mr-2 bg-white rounded p-1" />
+              <img src={logoImage} alt="EgyptExpressTVL Logo" className="h-10 mr-2 bg-white rounded p-1" />
             </div>
             <p className="mb-4 text-gray-300">
               Your gateway to extraordinary Middle Eastern experiences. Discover the wonders of the ancient and modern Middle East with us.
@@ -64,7 +64,7 @@ export function Footer() {
               </li>
               <li className="flex items-center">
                 <i className="fas fa-envelope mr-2 text-primary"></i>
-                <span className="text-gray-300">info@traveleast.com</span>
+                <span className="text-gray-300">info@egyptexpresstvl.com</span>
               </li>
               <li className="flex items-center">
                 <i className="fas fa-clock mr-2 text-primary"></i>
@@ -76,7 +76,7 @@ export function Footer() {
         
         <div className="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} TravelEast. All rights reserved.
+            © {new Date().getFullYear()} EgyptExpressTVL. All rights reserved.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/terms" className="text-gray-400 hover:text-primary text-sm transition">Terms of Service</Link>

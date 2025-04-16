@@ -37,7 +37,7 @@ export function Header() {
       <div className="container mx-auto px-4 py-4 flex flex-wrap items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
-            <img src={logoImage} alt="TravelEast Logo" className="h-10 mr-2" />
+            <img src={logoImage} alt="EgyptExpressTVL Logo" className="h-10 mr-2" />
           </Link>
         </div>
         
