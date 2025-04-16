@@ -1,5 +1,6 @@
 import { Header } from "@/components/header";
 import { HeroSection } from "@/components/hero-section";
+import { SearchFilters } from "@/components/search-filters";
 import { FeaturedOffers } from "@/components/featured-offers";
 import { PopularDestinations } from "@/components/popular-destinations";
 import { PopularPackages } from "@/components/popular-packages";
@@ -26,10 +27,13 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-        <FeaturedOffers offers={featuredOffers || []} />
-        <PopularDestinations destinations={destinations || []} />
-        <PopularPackages packages={popularPackages || []} />
-        <Newsletter />
+        <SearchFilters />
+        <div className="pt-8">
+          <FeaturedOffers offers={featuredOffers || []} />
+          <PopularDestinations destinations={destinations || []} />
+          <PopularPackages packages={popularPackages || []} />
+          <Newsletter />
+        </div>
       </main>
       <Footer />
     </div>

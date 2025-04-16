@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { FilterTabs } from "@/components/filter-tabs";
 
 export function HeroSection() {
   return (
@@ -13,7 +12,7 @@ export function HeroSection() {
         />
       </div>
       
-      <div className="container mx-auto px-4 py-10 md:py-16 lg:py-24 relative z-10">
+      <div className="container mx-auto px-4 py-16 md:py-20 lg:py-32 relative z-10">
         <div className="max-w-3xl">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             Discover the Beauty of the Middle East
@@ -21,11 +20,6 @@ export function HeroSection() {
           <p className="text-lg md:text-xl mb-8 text-gray-200">
             Experience authentic culture, breathtaking landscapes, and unforgettable adventures.
           </p>
-        </div>
-        
-        {/* Search and Filter Container */}
-        <div className="bg-white rounded-xl shadow-lg p-4 md:p-6 text-gray-800">
-          <FilterTabs />
         </div>
       </div>
     </section>
