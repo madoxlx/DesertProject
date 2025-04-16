@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useAuth } from "@/hooks/use-auth";
 import { useToast } from "@/hooks/use-toast";
+import logoImage from "@/assets/logo.png";
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -36,8 +37,7 @@ export function Header() {
       <div className="container mx-auto px-4 py-4 flex flex-wrap items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
-            <i className="fas fa-globe text-primary text-2xl mr-2"></i>
-            <span className="text-xl font-bold text-primary">TravelEast</span>
+            <img src={logoImage} alt="TravelEast Logo" className="h-10 mr-2" />
           </Link>
         </div>
         
