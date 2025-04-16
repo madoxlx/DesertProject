@@ -11,6 +11,7 @@ export const users = pgTable("users", {
   email: text("email").notNull(),
   firstName: text("first_name"),
   lastName: text("last_name"),
+  isAdmin: boolean("is_admin").default(false),
   createdAt: timestamp("created_at").defaultNow(),
 });
 
@@ -24,6 +25,7 @@ export const insertUserSchema = createInsertSchema(users).pick({
   email: true,
   firstName: true,
   lastName: true,
+  isAdmin: true,
 });
 
 // Destinations Schema

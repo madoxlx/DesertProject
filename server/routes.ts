@@ -146,7 +146,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
           username: user.username,
           email: user.email,
           firstName: user.firstName,
-          lastName: user.lastName
+          lastName: user.lastName,
+          isAdmin: user.isAdmin
         });
       });
     })(req, res, next);
@@ -163,7 +164,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
           username: user.username,
           email: user.email,
           firstName: user.firstName,
-          lastName: user.lastName
+          lastName: user.lastName,
+          isAdmin: user.isAdmin
         }
       });
     }
