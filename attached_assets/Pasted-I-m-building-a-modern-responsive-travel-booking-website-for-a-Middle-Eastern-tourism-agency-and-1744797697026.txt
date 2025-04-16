@@ -1,0 +1,108 @@
+I'm building a modern, responsive **travel booking website** for a Middle Eastern tourism agency and I need clean, semantic HTML structure for both the **filter system** and the **homepage layout**. The project includes five core services: Flights, Hotels, Visas, Trips, and Packages — each with its own filter group.
+
+Please generate semantic HTML markup with these requirements:
+
+---
+
+### 🎨 Design & UI Guidelines:
+Design a modern, responsive travel booking website UI for a Middle Eastern tourism agency.
+
+- The homepage should feature:
+  - A vibrant **hero section** with a scenic background image (e.g., pyramids or beach).
+  - Overlaid clean **search interface** including filters:
+    - Destination Country
+    - City
+    - Trip Type
+    - Number of Nights
+    - Budget
+  - **Tabs** at the top allow switching between:
+    - ✈️ Flights
+    - 🏨 Hotels
+    - 🛂 Visas
+    - 🌍 Trips
+    - 📦 Packages
+
+  - Each tab dynamically shows relevant filter fields for that service.
+  - Below the hero section, show:
+    - Featured offers
+    - Recommended destinations
+    - Popular travel packages in large cards with images, ratings, and prices
+
+- Color palette:
+  - White backgrounds
+  - Royal Blue accents (#2a6dfc)
+  - Subtle shadows
+  - Smooth rounded UI elements
+  - Clean, readable **sans-serif typography**
+
+- Design principles:
+  - Lots of white space
+  - Responsive grid layout
+  - Icons for sections: ✈️, 🏨, 🛂, 🌍, 📦
+
+- Footer should include:
+  - Contact info
+  - Social media links
+  - Quick access to: Blog, Terms, and Support
+
+---
+
+### 🧠 Structure Requirements:
+
+1. Generate a clean homepage layout:
+   - Header with logo + navigation links
+   - Hero section with scenic background
+   - Tabs for switching between filters (use <nav> or <ul>)
+   - Filters area for each service (see below)
+   - Results area placeholder (e.g., <div class="results">)
+   - Footer with contact and links
+
+2. Group each filter inside a <section> or <div class="card"> with clear titles and labels.
+
+3. Use semantic tags where applicable (header, main, section, footer, etc.)
+
+4. No styling or scripts needed — just clean HTML with good structure, comments, and accessibility in mind.
+
+---
+
+### 🎯 Filters and Fields:
+
+#### ✈️ Flights Filter:
+- From: <select> or <input>
+- To: <select> or <input>
+- Date: <input type="date">
+- Passengers: <input type="number">
+- Flight Class: <select> (Economy, Business)
+
+#### 🏨 Hotels Filter:
+- Country: <select>
+- City: <select>
+- Check-in Date: <input type="date">
+- Nights: <input type="number">
+- Guests: <input type="number">
+- Stars: <select> or <input type="range">
+
+#### 🛂 Visa Filter:
+- Country: <select>
+- Duration: <input type="number">
+- Type: <select> (Tourist / Work / Study)
+- Processing Time: <input type="number">
+- Price Range: <input type="range">
+
+#### 🌍 Trips Filter:
+- Destination: <select>
+- Trip Type: <select> (Safari / Honeymoon / Family)
+- Days: <input type="number">
+- Date: <input type="date">
+- Budget: <input type="range">
+
+#### 📦 Packages Filter:
+- Country: <select>
+- Nights: <input type="number">
+- Type: <select> (Luxury / Budget / Adventure)
+- Included: checkboxes for (Flight, Hotel, Transfers)
+- Price: <input type="range">
+
+---
+
+Please return the complete HTML page markup, ready to style later. Make sure the layout and forms are well structured and grouped logically.
