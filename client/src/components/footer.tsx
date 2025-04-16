@@ -56,19 +56,19 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-start">
                 <i className="fas fa-map-marker-alt mt-1 mr-2 text-primary"></i>
-                <span className="text-gray-300">123 Travel Street, Cairo, Egypt</span>
+                <span className="text-gray-300">94 Shehab St, El mohandeseen Giza, Egypt</span>
               </li>
               <li className="flex items-center">
                 <i className="fas fa-phone mr-2 text-primary"></i>
-                <span className="text-gray-300">+20 123 456 7890</span>
+                <span className="text-gray-300">+20233033371</span>
               </li>
               <li className="flex items-center">
                 <i className="fas fa-envelope mr-2 text-primary"></i>
-                <span className="text-gray-300">info@egyptexpresstvl.com</span>
+                <span className="text-gray-300">btc@egyptexpresstvl.com</span>
               </li>
               <li className="flex items-center">
                 <i className="fas fa-clock mr-2 text-primary"></i>
-                <span className="text-gray-300">Mon-Fri: 9am - 6pm</span>
+                <span className="text-gray-300">Sat-Fri: 9am - 6pm</span>
               </li>
             </ul>
           </div>
