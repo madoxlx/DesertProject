@@ -4,6 +4,7 @@ import { SearchFilters } from "@/components/search-filters";
 import { FeaturedOffers } from "@/components/featured-offers";
 import { PopularDestinations } from "@/components/popular-destinations";
 import { PopularPackages } from "@/components/popular-packages";
+import { TravelWithUs } from "@/components/travel-with-us";
 import { Newsletter } from "@/components/newsletter";
 import { Footer } from "@/components/footer";
 import { useQuery } from "@tanstack/react-query";
@@ -31,6 +32,7 @@ export default function Home() {
         <div className="pt-8">
           <FeaturedOffers offers={featuredOffers || []} />
           <PopularDestinations destinations={destinations || []} />
+          <TravelWithUs />
           <PopularPackages packages={popularPackages || []} />
           <Newsletter />
         </div>
