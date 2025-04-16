@@ -18,6 +18,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { apiRequest } from "@/lib/queryClient";
 
 const loginSchema = z.object({
   username: z.string().min(3, {
@@ -44,22 +45,32 @@ export default function Login() {
   async function onSubmit(values: z.infer<typeof loginSchema>) {
     setLoading(true);
     try {
-      // This is where you would normally call your API for login
-      // For now we'll just simulate a successful login
-      console.log(values);
-
-      // Show success message
-      toast({
-        title: "Success!",
-        description: "You have successfully logged in.",
-      });
-
-      // Redirect to home page
-      setTimeout(() => setLocation("/"), 1000);
+      // Call our authentication API
+      const response = await apiRequest('POST', '/api/auth/login', values);
+      
+      const userData = await response.json();
+      
+      // Check if user is admin (Ahmed)
+      if (userData.username === 'ahmed') {
+        // Redirect to admin dashboard
+        toast({
+          title: "Admin Access Granted!",
+          description: "Welcome to the admin dashboard.",
+        });
+        setTimeout(() => setLocation("/admin"), 1000);
+      } else {
+        // Show success message for regular users
+        toast({
+          title: "Success!",
+          description: "You have successfully logged in.",
+        });
+        // Redirect to home page
+        setTimeout(() => setLocation("/"), 1000);
+      }
     } catch (error) {
       toast({
         title: "Error",
-        description: "Failed to login. Please try again.",
+        description: "Failed to login. Please check your username and password.",
         variant: "destructive",
       });
     } finally {
