@@ -28,27 +28,31 @@ export function Header() {
           <Link href="/" className="text-gray-700 hover:text-primary font-medium">
             Home
           </Link>
-          <Link href="/destinations" className="text-gray-700 hover:text-primary font-medium">
+          <Link href="/" className="text-gray-700 hover:text-primary font-medium">
             Destinations
           </Link>
-          <Link href="/offers" className="text-gray-700 hover:text-primary font-medium">
+          <Link href="/" className="text-gray-700 hover:text-primary font-medium">
             Offers
           </Link>
-          <Link href="/about" className="text-gray-700 hover:text-primary font-medium">
+          <Link href="/about-us" className="text-gray-700 hover:text-primary font-medium">
             About Us
           </Link>
-          <Link href="/contact" className="text-gray-700 hover:text-primary font-medium">
+          <Link href="/contact-us" className="text-gray-700 hover:text-primary font-medium">
             Contact
           </Link>
         </nav>
         
         <div className="hidden md:flex items-center space-x-4">
-          <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white rounded-full">
-            Log In
-          </Button>
-          <Button className="bg-primary text-white rounded-full hover:bg-blue-700">
-            Sign Up
-          </Button>
+          <Link href="/login">
+            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white rounded-full">
+              Login
+            </Button>
+          </Link>
+          <Link href="/register">
+            <Button className="bg-primary text-white rounded-full hover:bg-blue-700">
+              Register
+            </Button>
+          </Link>
         </div>
       </div>
       
@@ -57,25 +61,29 @@ export function Header() {
         <Link href="/" className="block py-2 text-gray-700 hover:text-primary font-medium">
           Home
         </Link>
-        <Link href="/destinations" className="block py-2 text-gray-700 hover:text-primary font-medium">
+        <Link href="/" className="block py-2 text-gray-700 hover:text-primary font-medium">
           Destinations
         </Link>
-        <Link href="/offers" className="block py-2 text-gray-700 hover:text-primary font-medium">
+        <Link href="/" className="block py-2 text-gray-700 hover:text-primary font-medium">
           Offers
         </Link>
-        <Link href="/about" className="block py-2 text-gray-700 hover:text-primary font-medium">
+        <Link href="/about-us" className="block py-2 text-gray-700 hover:text-primary font-medium">
           About Us
         </Link>
-        <Link href="/contact" className="block py-2 text-gray-700 hover:text-primary font-medium">
+        <Link href="/contact-us" className="block py-2 text-gray-700 hover:text-primary font-medium">
           Contact
         </Link>
         <div className="mt-4 flex space-x-2">
-          <Button variant="outline" className="w-1/2 border-primary text-primary hover:bg-primary hover:text-white rounded-full">
-            Log In
-          </Button>
-          <Button className="w-1/2 bg-primary text-white rounded-full hover:bg-blue-700">
-            Sign Up
-          </Button>
+          <Link href="/login" className="w-1/2">
+            <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-white rounded-full">
+              Login
+            </Button>
+          </Link>
+          <Link href="/register" className="w-1/2">
+            <Button className="w-full bg-primary text-white rounded-full hover:bg-blue-700">
+              Register
+            </Button>
+          </Link>
         </div>
       </div>
     </header>
